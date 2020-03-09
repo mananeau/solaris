@@ -112,6 +112,8 @@ def _check_crs(input_crs):
         out_crs = rasterio.crs.CRS.from_epsg(input_crs)
     elif input_crs is None:
         out_crs = input_crs
+    else:
+        out_crs = input_crs
     return out_crs
 
 
